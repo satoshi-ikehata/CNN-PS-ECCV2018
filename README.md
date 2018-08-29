@@ -1,5 +1,4 @@
 # CNN-PS
-# Project Title
 
 Satoshi Ikeahta. CNN-PS: CNN-based Photometric Stereo for General Non-Convex Surfaces, ECCV2018.
 
@@ -20,7 +19,7 @@ Tested on:
   - CPU: Intel® Xeon(R) CPU E5-1650 v4 @ 3.60GHz × 12 , GPU: 3x GeForce GTX1080Ti, Memory 64GB
 
 ### Running the tests
-For testing network (with DiLiGenT dataset)
+For testing network (with DiLiGenT dataset), please download [DiLiGenT](https://sites.google.com/site/photometricstereodata/)
 
 ```
 python test.py
