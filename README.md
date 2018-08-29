@@ -19,12 +19,18 @@ Tested on:
   - CPU: Intel® Xeon(R) CPU E5-1650 v4 @ 3.60GHz × 12 , GPU: 3x GeForce GTX1080Ti, Memory 64GB
 
 ### Running the tests
-For testing network (with DiLiGenT dataset), please download [DiLiGenT dataset](https://sites.google.com/site/photometricstereodata/) by Boxin Shi [1]
+For testing network (with DiLiGenT dataset), please download [DiLiGenT dataset](https://sites.google.com/site/photometricstereodata/) by Boxin Shi [1] and extract it everywhere. Then, specify the path of DiLiGenT/pmsData in test.py as
+
+```
+diligent = 'USER_PATH/DiLiGenT/pmsData'
+```
+
+Then, just simply try to run test.py as
 
 ```
 python test.py
 ```
-The pretrained model for TensorFlow backend is included (weight_and_model.hdf5)
+The pretrained model for TensorFlow backend is included (weight_and_model.hdf5).
 
 ## Running the training
 I will prepare for the training data soon...
