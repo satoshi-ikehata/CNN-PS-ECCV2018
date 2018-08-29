@@ -19,7 +19,7 @@ Tested on:
   - CPU: Intel® Xeon(R) CPU E5-1650 v4 @ 3.60GHz × 12 , GPU: 3x GeForce GTX1080Ti, Memory 64GB
 
 ### Running the tests
-For testing network (with DiLiGenT dataset), please download [DiLiGenT](https://sites.google.com/site/photometricstereodata/)
+For testing network (with DiLiGenT dataset), please download [DiLiGenT dataset](https://sites.google.com/site/photometricstereodata/) by Boxin Shi [1]
 
 ```
 python test.py
@@ -35,3 +35,6 @@ This project is licensed under the MIT License - see the [LICENSE.md](LICENSE.md
 
 ## Acknowledgments
 This work was supported by JSPS KAKENHI Grant Number JP17H07324.
+
+## References
+[1] Boxin Shi, Zhipeng Mo, Zhe Wu, Dinglong Duan, Sai-Kit Yeung, and Ping Tan, "A Benchmark Dataset and Evaluation for Non-Lambertian and Uncalibrated Photometric Stereo", In IEEE Transactions on Pattern Analysis and Machine Intelligence (TPAMI), 2018.
