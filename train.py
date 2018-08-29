@@ -77,6 +77,6 @@ for k in range(10):
         else:
             hist = model.fit(SList, NList, batch_size= 1024, epochs= epochs, verbose=1, shuffle=True, validation_split=0.1)
 
-            model.save('weight_and_model_user.hdf5')
-            print('Model Updated!!')
+        model.save('weight_and_model_user.hdf5')
+        print('Model Updated!!')
         del SList,NList
