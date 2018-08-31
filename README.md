@@ -2,7 +2,6 @@
 
 Satoshi Ikeahta. CNN-PS: CNN-based Photometric Stereo for General Non-Convex Surfaces, ECCV2018.
 
-
 ## Getting Started
 
 This is a Keras implementation of a CNN for estimating surface normals from images captured under different illumination.
@@ -19,7 +18,7 @@ Tested on:
   - CPU: Intel® Xeon(R) CPU E5-1650 v4 @ 3.60GHz × 12 , GPU: 3x GeForce GTX1080Ti, Memory 64GB
 
 ### Running the tests
-For testing network (with DiLiGenT dataset), please download [DiLiGenT dataset](https://sites.google.com/site/photometricstereodata/) by Boxin Shi [1] and extract it everywhere. Then, specify the path of DiLiGenT/pmsData in test.py as
+For testing network (with DiLiGenT dataset), please download [DiLiGenT dataset (DiLiGenT.zip)](https://sites.google.com/site/photometricstereodata/) by Boxin Shi [1] and extract it everywhere. Then, specify the path of DiLiGenT/pmsData in test.py as
 
 ```
 diligent = 'USER_PATH/DiLiGenT/pmsData'
@@ -31,6 +30,12 @@ Then, just simply try to run test.py as
 python test.py
 ```
 The pretrained model for TensorFlow backend is included (weight_and_model.hdf5).
+
+### Noice about DiLiGenT datasets
+
+As mentioned in the paper, I found that DiLiGenT dataset has some problems.
+- (a) The first 20 images in bearPNG
+- (b) normal.txt in harvestPNG
 
 ## Running the training
 I will prepare for the training data soon...
