@@ -1,8 +1,10 @@
 # CNN-PS
 
 Satoshi Ikeahta. CNN-PS: CNN-based Photometric Stereo for General Non-Convex Surfaces, ECCV2018.
+
  [paper](https://arxiv.org/abs/1808.10093)
- [supplementary](webimg/cnnps_eccv2018-supp.pdf)
+
+ [supplementary](webimage/cnnps_eccv2018-supp.pdf)
 
 ## Getting Started
 
