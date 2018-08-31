@@ -35,11 +35,11 @@ def main():
     # Prepare images
     scale = 1 # downsize the image by this scale
     w = 32 # size of observation map
-    K = 10 # the number of different rotations for rotational pseudo-invariance
+    K = 10 # the number of different rotations for the rotational pseudo-invariance
 
 
-    [Sv, Nv, Rv, IDv, Szv] = dio.prep_data_2d_from_images_test(dirlist, 1, w, 10)
-    # [Sv, Nv, Rv, IDv, Szv] = dio.prep_data_2d_from_images_test(dirlist, 1, w, 10, index = range(20, 96)) # for bearPNG
+    [Sv, Nv, Rv, IDv, Szv] = dio.prep_data_2d_from_images_test(dirlist, 1, w, 10) # Comment this line when runnning test on bearPNG
+    # [Sv, Nv, Rv, IDv, Szv] = dio.prep_data_2d_from_images_test(dirlist, 1, w, 10, index = range(20, 96)) # Uncomment this line when running test on bearPNG
 
     # Load pretrained model
     model = load_model('/home/sikehata/Dropbox/codes/DeepNormalECCV2018/Code/python/weight_and_model_20180313notbest_prps.hdf5')

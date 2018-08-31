@@ -34,12 +34,12 @@ The pretrained model for TensorFlow backend is included (weight_and_model.hdf5).
 ### Noice about DiLiGenT datasets
 
 As mentioned in the paper, I found that DiLiGenT dataset has some problems.
-- The first 20 images in bearPNG are corrupted. To get the good result, "skip" first 20 images in the dataset as
+- The first 20 images in bearPNG are corrupted. To get the good result, "skip" first 20 images in the dataset by uncommenting this line in test.py.
 ```
-[Sv, Nv, Rv, IDv, Szv] = dio.prep_data_2d_from_images_test(dirlist, 1, w, 10, index = range(20, 96)) # for bearPNG
+# [Sv, Nv, Rv, IDv, Szv] = dio.prep_data_2d_from_images_test(dirlist, 1, w, 10, index = range(20, 96)) # for bearPNG
 ```
 
-- normal.txt (ground truth surface normals) in harvestPNG is fliped upside down. So, to get the proper result, uncomment the line in mymodule/deeplearning_IO as
+- normal.txt (ground truth surface normals) in harvestPNG is fliped upside down. To get the proper result, uncomment this line in mymodule/deeplearning_IO.py.
 
 ```
 # nml = np.flipud(nml) # Uncomment when test on Harvest, the surface noraml needs to be fliped upside down
