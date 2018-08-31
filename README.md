@@ -1,6 +1,8 @@
 # CNN-PS
 
 Satoshi Ikeahta. CNN-PS: CNN-based Photometric Stereo for General Non-Convex Surfaces, ECCV2018.
+ [paper](https://arxiv.org/abs/1808.10093)
+ [supplementary](webimg/cnnps_eccv2018-supp.pdf)
 
 ## Getting Started
 
@@ -51,7 +53,7 @@ As mentioned in the paper, I found that DiLiGenT dataset has some problems.
 ```
 # nml = np.flipud(nml) # Uncomment when test on Harvest, the surface noraml needs to be flipped upside down
 ```
-### Running the test on ohter datasets (Unsupported)
+### Running the test on othter datasets (Unsupported)
 If you want to run this code on ohter dataset, please allocate your own data just in the same manner with DiLiGenT. The required files are
 - images (.png format in default, but you can easily change the code for other formats)
 - lights (light_directions.txt, light_intensities.txt)
