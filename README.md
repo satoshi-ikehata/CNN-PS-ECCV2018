@@ -30,9 +30,11 @@ Then, just simply try to run test.py as
 python test.py
 ```
 
-If the program properly works, you will get the average angular errors (indegrees) for each dataset as
+If the program properly works, you will get average angular errors (in degrees) for each dataset.
 
 <img src="webimage/img000.png" width="300">
+
+The final result [Mean] is the error about the averaged surface normal over first K (K=10 in this case) differently rotated observation maps. See details in my paper.
 
 
 The pretrained model for TensorFlow backend is included (weight_and_model.hdf5).
