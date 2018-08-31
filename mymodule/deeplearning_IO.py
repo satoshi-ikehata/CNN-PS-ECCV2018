@@ -327,7 +327,9 @@ def prep_data_2d_from_images_test(dirlist, scale, w, rotdiv, index=-1):
         lines = np.float32(np.array(data.split('\n')))
         nml = np.reshape(lines, (height,width,3))
         nml = cv2.resize(nml, None, fx = scale, fy = scale, interpolation = cv2.INTER_NEAREST)
-        # nml = np.flipud(nml) # when test on Harvest, the surface noraml needs to be fliped upside down
+
+        # nml = np.flipud(nml) # Uncomment when test on Harvest, the surface noraml needs to be fliped upside down
+
         nShape = np.shape(nml)
         height = nShape[0]
         width = nShape[1]
