@@ -31,7 +31,7 @@ python test.py
 ```
 The pretrained model for TensorFlow backend is included (weight_and_model.hdf5).
 
-### Noice about DiLiGenT datasets
+### Important notice about DiLiGenT datasets
 
 As mentioned in the paper, I found that DiLiGenT dataset has some problems.
 - The first 20 images in bearPNG are corrupted. To get the good result, "skip" first 20 images in the dataset by uncommenting this line in test.py.
@@ -45,7 +45,7 @@ As mentioned in the paper, I found that DiLiGenT dataset has some problems.
 # nml = np.flipud(nml) # Uncomment when test on Harvest, the surface noraml needs to be fliped upside down
 ```
 
-## Running the training
+### Running the training
 I will prepare for the training data soon...
 
 ## License
