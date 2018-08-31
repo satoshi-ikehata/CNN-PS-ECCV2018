@@ -51,6 +51,11 @@ As mentioned in the paper, I found that DiLiGenT dataset has some problems.
 ```
 # nml = np.flipud(nml) # Uncomment when test on Harvest, the surface noraml needs to be flipped upside down
 ```
+### Running the test on ohter datasets (Unsupported)
+If you want to run this code on ohter dataset, please allocate your own data just in the same manner with DiLiGenT. The required files are
+- images (.png format in default, but you can easily change the code for other formats)
+- lights (light_directions.txt, light_intensities.txt)
+- normals (normal.txt, if no ground truth surface normal is available, you can simply set all the values by zero)
 
 ### Running the training
 I will prepare for the training data soon...
