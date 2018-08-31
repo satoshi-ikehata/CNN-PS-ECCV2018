@@ -29,6 +29,12 @@ Then, just simply try to run test.py as
 ```
 python test.py
 ```
+
+If the program properly works, you will get the average angular errors (indegrees) for each dataset as
+
+<img src="webimage/img000.png" width="300">
+
+
 The pretrained model for TensorFlow backend is included (weight_and_model.hdf5).
 
 ### Important notice about DiLiGenT datasets
