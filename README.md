@@ -1,4 +1,4 @@
-# CNN-PSd
+# CNN-PS
 
 Satoshi Ikeahta. CNN-PS: CNN-based Photometric Stereo for General Non-Convex Surfaces, ECCV2018.
 
@@ -18,7 +18,7 @@ Tested on:
   - CPU: Intel® Xeon(R) CPU E5-1650 v4 @ 3.60GHz × 12 , GPU: 3x GeForce GTX1080Ti, Memory 64GB
 
 ### Running the tests
-For testing network (with DiLiGenT dataset), please download [DiLiGenT dataset (DiLiGenT.zip)](https://sites.google.com/site/photometricstereodata/) by Boxin Shi [1] and extract it everywhere. Then, specify the path of DiLiGenT/pmsData in test.py as
+For testing network (with DiLiGenT dataset), please download [DiLiGenT dataset (DiLiGenT.zip)](https://sites.google.com/site/photometricstereodata/) by Boxin Shi [1] and extract it anywhere. Then, specify the path of DiLiGenT/pmsData in test.py as
 
 ```
 diligent = 'USER_PATH/DiLiGenT/pmsData'
@@ -39,10 +39,10 @@ As mentioned in the paper, I found that DiLiGenT dataset has some problems.
 # [Sv, Nv, Rv, IDv, Szv] = dio.prep_data_2d_from_images_test(dirlist, 1, w, 10, index = range(20, 96)) # for bearPNG
 ```
 
-- normal.txt (ground truth surface normals) in harvestPNG is fliped upside down. To get the proper result, uncomment this line in mymodule/deeplearning_IO.py.
+- normal.txt (ground truth surface normals) in harvestPNG is flipped upside down. To get the proper result, uncomment this line in mymodule/deeplearning_IO.py.
 
 ```
-# nml = np.flipud(nml) # Uncomment when test on Harvest, the surface noraml needs to be fliped upside down
+# nml = np.flipud(nml) # Uncomment when test on Harvest, the surface noraml needs to be flipped upside down
 ```
 
 ### Running the training
