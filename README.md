@@ -62,7 +62,7 @@ If you want to run this code on ohter dataset, please allocate your own data jus
 - normals (normal.txt, if no ground truth surface normal is available, you can simply set all the values by zero)
 
 ### Running the training
-I will prepare for the training data soon...
+If you want the training dataset, please send a request to sikehata@nii.ac.jp
 
 ## License
 
