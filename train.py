@@ -31,7 +31,7 @@ epochs = 1
 min_err = 1000
 rotdivin = 10
 rotdivon = 10
-datasplit = 3 # 25/x should be integer
+datasplit = 3 # len(objlist)/datasplit should be integer
 
 subsetsize = np.int32(len(objlist)/datasplit)
 for k in range(10):
