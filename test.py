@@ -38,11 +38,11 @@ def main():
     K = 10 # the number of different rotations for the rotational pseudo-invariance
 
 
-    [Sv, Nv, Rv, IDv, Szv] = dio.prep_data_2d_from_images_test(dirlist, 1, w, 10) # Comment this line when runnning test on bearPNG
+    [Sv, Nv, Rv, IDv, Szv] = dio.prep_data_2d_from_images_test(dirlist, scale, w, K) # Comment this line when runnning test on bearPNG
     # [Sv, Nv, Rv, IDv, Szv] = dio.prep_data_2d_from_images_test(dirlist, 1, w, 10, index = range(20, 96)) # Uncomment this line when running test on bearPNG
 
     # Load pretrained model
-    model = load_model('/home/sikehata/Dropbox/codes/DeepNormalECCV2018/Code/python/weight_and_model_20180313notbest_prps.hdf5')
+    model = load_model('weight_and_model.hdf5')
 
     # Test network
     dio.TestNetwork(model,Sv,Nv,Rv,IDv,Szv,showFig=1,isTensorFlow=1)
