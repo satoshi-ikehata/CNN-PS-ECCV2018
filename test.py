@@ -39,8 +39,7 @@ def main():
 
 
     [Sv, Nv, Rv, IDv, Szv] = dio.prep_data_2d_from_images_test(dirlist, scale, w, K) # Comment this line when runnning test on bearPNG
-    # [Sv, Nv, Rv, IDv, Szv] = dio.prep_data_2d_from_images_test(dirlist, 1, w, 10, index = range(20, 96)) # Uncomment this line when running test on bearPNG
-
+    # [Sv, Nv, Rv, IDv, Szv] = dio.prep_data_2d_from_images_test(dirlist, scale, w, K, index = range(20, 96)) # Uncomment this if you want to use the subset of images (in this case, 20-th to 96-th images are input)
     # Load pretrained model
     model = load_model('weight_and_model.hdf5')
 
