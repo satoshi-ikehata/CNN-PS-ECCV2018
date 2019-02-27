@@ -374,10 +374,17 @@ def prep_data_2d_from_images_test(dirlist, scale, w, rotdiv, index=-1):
                 Li[i,0] = float(s[0])
                 Li[i,1] = float(s[1])
                 Li[i,2] = float(s[2])
+        
+        
 
 
         if index == -1:
-            index = range(0, numLight)
+            setName = os.path.basename(dirpath.rstrip('/')) # if dirpath ends in '/' basename returns the empty string
+            if setName == 'bearPNG':
+                # the first 20 images of bearPNG have errors, see paper
+                index = range(20, numLight)
+            else:
+                index = range(0, numLight)
 
         L = L[index,:]
         Li = Li[index,:]
