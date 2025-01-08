@@ -62,8 +62,7 @@ If you want to run this code on ohter dataset, please allocate your own data jus
 - normals (normal.txt, if no ground truth surface normal is available, you can simply set all the values by zero)
 
 ### Running the training
-If you want the training dataset, please send a request to sikehata@nii.ac.jp
-
+Training is NOT supported in this repository but you can download the training dataset from [here](https://www.dropbox.com/scl/fo/i7a53ym4s4ugwp3pmkj9s/ACJEww6wxoz8b0byacGMCys?rlkey=w70hp17oqe9dxpg1j60ogb6p1&st=ws4me2cc&dl=0)
 ## License
 
 This project is licensed under the MIT License - see the [LICENSE.md](LICENSE.md) file for details
